@@ -12,12 +12,15 @@ package ca.sheridancollege.week1.softwarefundamentals;
 public class Student {
     
     private String name;
-
+    private String CID;
     /**
      * Get the value of name
      *
      * @return the value of name
      */
+     public String getCID() {
+        return CID;}
+        
     public String getName() {
         return name;
     }
@@ -27,6 +30,9 @@ public class Student {
      *
      * @param name new value of name
      */
+    public void setCID(String _CID){
+        _CID=CID;
+    }
     public void setName(String name) {
         this.name = name;
     }
